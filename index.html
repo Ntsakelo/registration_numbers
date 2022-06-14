@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="./styles/registration_numbers.css"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="head">
+        <h1 class="regHead">Registration Numbers</h1>
+      </div>
+      <aside class="instructions removeInfo">
+        <div class="usageInfo infoOut">
+          <p>Enter registration numbers from the following towns:</p>
+          <ul class="townList">
+            <li>Cape Town(CA)</li>
+            <li>KuilsRiver(CF)</li>
+            <li>Paarl(CJ)</li>
+            <li>Bellville(CY)</li>
+            <li>Use either one of these formats e.g CF 218211/CA 222-222/CJ 555 555</li>
+          </ul>
+          <p>
+            Click "ADD" when you have entered the registration number in the
+            text area.You should be able to filter the registrations by a town
+            using the dropdown menu and choosing the town for which you want to
+            view the registration numbers.
+          </p>
+          <button class="closeInstructions">Got it</button>
+        </div>
+      </aside>
+      <div class="displayState">
+        <p class="state"></p>
+      </div>
+      <div class="linkDiv">
+        
+        <a class="infoLink" href="#">Instructions</a>
+      </div>
+
+      <div class="formDiv">
+        <form>
+          <input
+            type="text"
+            class="regNumInput"
+            placeholder="Registration Number"
+          />
+          <button type="button" class="add">ADD</button>
+          <div class="townOptions">
+            <label for="towns">Filter:</label>
+            <select name="towns" id="towns" class="towns">
+              <option value="all">All</option>
+              <option value="capeTown">Cape Town</option>
+              <option value="kuilsRiver">KuilsRiver</option>
+              <option value="paarl">Paarl</option>
+              <option value="bellville">Bellville</option>
+            </select>
+          </div>
+        </form>
+      </div>
+      <div class="regNumberDisplay">
+        <!-- <p class="empty">No reg for Cape town</p> -->
+      </div>
+      <button class="clearList">Clear All</button>
+    </div>
+    <script src="./regNumbers.js"></script>
+    <script src="./registration_numbers.js"></script>
+  </body>
+</html>
