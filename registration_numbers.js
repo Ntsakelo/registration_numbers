@@ -52,6 +52,9 @@ addBtn.addEventListener("click", function () {
   stateDiv.classList.remove("sucess");
   stateDiv.setAttribute("style", "visibility:visible");
   //SET TIMEOUT
+  //Default town select to all towns
+  const townSelect = document.querySelector(".towns");
+  townSelect.value = "all";
   if (registration.getFilterArr().length === 0) {
     regDisplay.innerHTML = "";
   }
